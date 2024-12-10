@@ -392,8 +392,8 @@ a#linkarticle {
 #contato {
   background-color: #252b42;
   margin: auto;
-  width: 1440px;
-  height: 373px;
+  max-width: 1440px;
+  max-height: 373px;
 }
 .contato {
   display: flex;
@@ -431,7 +431,7 @@ a#linkarticle {
 }
 
 footer {
-  width: 1440px;
+  max-width: 1440px;
   height: 80px;
   text-align: center;
   margin: auto;
