@@ -416,14 +416,18 @@ a#linkarticle {
 }
 #pcont {
   color: var(--cortextoclaro);
+  width: 370px;
+  height: 40px;
+  font-size: 12px;
+  font-family: var(--font-primaria);
 }
 #h2cont {
   color: var(--cortextoclaro);
+  font-family: var(--font-primaria);
 }
 #spancont {
   font-weight: bold;
-}
-#cont2 {
+  font-family: var(--font-primaria);
 }
 
 footer {
