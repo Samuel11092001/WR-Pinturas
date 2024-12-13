@@ -94,8 +94,14 @@ header {
 }
 nav {
   display: block;
+  position: sticky;
+  z-index: 5;
+  top: 0;
   width: auto;
   margin: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 .navbar-brand {
   display: inline-block;
@@ -163,7 +169,7 @@ button#header1 {
   margin: 10px;
 }
 main {
-  background-color: white;
+  background-image: linear-gradient(to bottom, white 90%, #eaf8ff);
   margin: auto;
   min-width: 320px;
   max-width: 1440px;
@@ -171,13 +177,14 @@ main {
 }
 section#main {
   display: grid;
-  margin: 112px auto 112px auto;
+  margin: auto;
   max-width: 1050px;
   max-height: 556px;
+  row-gap: 112px;
+  padding: 112px;
 }
-div #main {
+div#main {
   display: inline-grid;
-  margin-bottom: 112px;
   text-align: left;
   padding-right: 38%;
 }
@@ -290,7 +297,7 @@ article {
   display: block;
   max-width: 1440px;
   max-height: 872px;
-  background-color: white;
+  background-color: #e9f8fff7;
   margin: auto;
 }
 .article {
@@ -332,6 +339,7 @@ div#article {
   color: #73737300;
   width: 116px;
   height: 138px;
+  box-shadow: 1px 2px 5px 1px #00000052;
 }
 #imgcentral {
   display: block;
@@ -351,6 +359,7 @@ div#article {
   width: 59px;
   height: 59px;
   border-radius: 100%;
+  box-shadow: 2px 5px 1px #00000052;
 }
 .article2 {
   display: inline-flex;
@@ -391,9 +400,10 @@ a#linkarticle {
 }
 #contato {
   background-color: #252b42;
+
   margin: auto;
   max-width: 1440px;
-  max-height: 373px;
+  max-height: 393px;
 }
 .contato {
   display: flex;
@@ -429,10 +439,15 @@ a#linkarticle {
   font-weight: bold;
   font-family: var(--font-primaria);
 }
-
 footer {
-  max-width: 1440px;
-  height: 80px;
-  text-align: center;
   margin: auto;
+  backdrop-filter: blur(10px);
+  background-color: #252b42;
+}
+#creditos {
+  text-align: center;
+  color: var(--cortextoclaro);
+  font-weight: 200;
+  font-size: 12px;
+  font-family: "Montserrat";
 }
